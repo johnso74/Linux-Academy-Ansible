@@ -1,0 +1,13 @@
+--- # MASTER PLAYBOOK FOR WEBSERVERS
+- hosts: web-hosts
+  user: user
+  become: yes
+  connection: ssh
+  pre_tasks:
+  - name: When did the ROLE start
+    raw: date > /home/user/startofrole.log
+  roles: 
+    - webservers
+  post_tasks:
+  - name: When did the ROLE end
+    raw: date > /home/user/endofrole.log

@@ -1,0 +1,3 @@
+vars:
+     control_server: john-so-vlinteractive-com1.mylabserver.com
+     web_root: /var/www/html/

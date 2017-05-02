@@ -1,0 +1,10 @@
+--- # GIT MODULE EXAMPLE
+- hosts: web-hosts
+  user: user
+  become: yes
+  connection: ssh
+  gather_facts: no
+  tasks:
+  - name: Checking out a git repo on the remote server
+    git: repo=ssh://user@john-so-vlinteractive-com1.mylabserver.com/home/user/testrepo dest=/home/user/Playbooks
+
