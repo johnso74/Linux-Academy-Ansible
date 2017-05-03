@@ -1,3 +1,5 @@
+--- # Sample outline file to be converted to YAML
+
 - web-hosts
 - user user
 - sudo rights
